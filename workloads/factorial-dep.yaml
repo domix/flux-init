@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -24,7 +25,7 @@ spec:
     spec:
       containers:
       - name: factorial
-        image: domix/factorial-service:0.0.1
+        image: domix/factorial-service:0.0.5
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
