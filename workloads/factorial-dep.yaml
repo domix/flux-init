@@ -33,11 +33,11 @@ spec:
           protocol: TCP
         livenessProbe:
           httpGet:
-            path: /
+            path: /factorial
             port: 8080
         readinessProbe:
           httpGet:
-            path: /
+            path: /factorial
             port: 8080
         resources:
           limits:
